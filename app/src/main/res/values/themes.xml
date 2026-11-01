@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        DayNight agar latar jendela/splash mengikuti tema sistem
+        (tidak berkedip terang saat start di mode gelap).
+        Konten Compose mengikuti SemineTheme.
+    -->
+    <style name="Theme.Semine" parent="android:Theme.DeviceDefault.DayNight">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
