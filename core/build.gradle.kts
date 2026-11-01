@@ -1,6 +1,5 @@
 plugins {
-    // AGP sudah ada di classpath root (lewat android-application), jadi id dipakai tanpa versi.
-    id("com.android.library")
+    alias(libs.plugins.android.library)
 }
 
 android {

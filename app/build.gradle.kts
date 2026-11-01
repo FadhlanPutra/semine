@@ -49,6 +49,9 @@ android {
 
 dependencies {
     implementation(project(":core"))
+    implementation(project(":service"))
+    implementation(project(":jvm"))
+    implementation(project(":data"))
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)

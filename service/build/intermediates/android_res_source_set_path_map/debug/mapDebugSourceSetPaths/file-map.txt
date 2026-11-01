@@ -1,0 +1,9 @@
+com.lann.semine.service-pngs-0 E:\AndroidStudio\AndroidStudioProjects\Semine\service\build\generated\res\pngs\debug
+com.lann.semine.service-updated_navigation_xml-1 E:\AndroidStudio\AndroidStudioProjects\Semine\service\build\generated\updated_navigation_xml\debug
+com.lann.semine.service-mergeDebugResources-2 E:\AndroidStudio\AndroidStudioProjects\Semine\service\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.lann.semine.service-mergeDebugResources-3 E:\AndroidStudio\AndroidStudioProjects\Semine\service\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.lann.semine.service-debug-4 E:\AndroidStudio\AndroidStudioProjects\Semine\service\build\intermediates\merged_res\debug\mergeDebugResources
+com.lann.semine.service-debug-5 E:\AndroidStudio\AndroidStudioProjects\Semine\service\build\intermediates\packaged_res\debug\packageDebugResources
+com.lann.semine.service-debug-6 E:\AndroidStudio\AndroidStudioProjects\Semine\service\src\debug\res
+com.lann.semine.service-main-7 E:\AndroidStudio\AndroidStudioProjects\Semine\service\src\main\res
+gradleHome-0 C:\Users\Next\.gradle
