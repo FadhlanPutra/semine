@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Semine"
 include(":app")
+include(":core")
