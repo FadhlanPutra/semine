@@ -14,12 +14,12 @@ Legenda: `[ ]` belum, `[x]` selesai. Tanda **GATE** berarti titik go/no-go.
 - [ ] Pilih lisensi proyek (mis. GPLv3 atau Apache-2.0; cek kompatibilitas dengan lisensi JRE dan dependensi)
 - [ ] Setup Android Studio, JDK, NDK, CMake
 - [ ] Siapkan 2–3 perangkat uji: minimal satu Android 10–11, satu Android 12+, usahakan beda merek (Xiaomi/Samsung/Oppo)
-- [ ] Buat proyek Gradle: Kotlin + Compose + Material 3, `minSdk 29`, `targetSdk` terbaru yang disyaratkan Play
-- [ ] Konfigurasi ABI filter `arm64-v8a` saja
-- [ ] Buat dua product flavor: `foss` dan `play`
+- [x] Buat proyek Gradle: Kotlin + Compose + Material 3, `minSdk 29`, `targetSdk` terbaru yang disyaratkan Play
+- [x] Konfigurasi ABI filter `arm64-v8a` saja
+- [x] Buat dua product flavor: `foss` dan `play`
 - [ ] Setup CI GitHub Actions (build debug, lint, unit test)
-- [ ] Setup struktur modul: `app`, `core` (model, util), `service` (proses server), `jvm` (JNI/JRE), `data` (repo, Room), `feature-*` (UI per fitur)
-- [ ] Setup lokalisasi sejak awal (`values/` dan `values-in/`), aturan: tidak ada string di kode
+- [x] Setup struktur modul: `app`, `core`, `service`, `jvm`, `data` (selesai); `feature-*` dibuat saat fitur pertama dikerjakan di Fase 1
+- [x] Setup lokalisasi sejak awal (`values/` dan `values-in/`), aturan: tidak ada string di kode
 - [ ] Setup logging dan crash report lokal (tanpa layanan berbayar)
 
 **Selesai bila:** proyek bisa dibuild di CI untuk kedua flavor dan jalan di perangkat uji (layar kosong).
