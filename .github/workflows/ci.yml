@@ -29,7 +29,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v6
 
       - name: Build debug APKs and run lint
-        run: ./gradlew assembleFossDebug assemblePlayDebug lintFossDebug --no-daemon --stacktrace
+        run: ./gradlew assembleFossDebug assemblePlayDebug lintFossDebug :app:testFossDebugUnitTest --no-daemon --stacktrace
 
       - name: Upload lint reports
         if: failure()
@@ -40,4 +40,6 @@ jobs:
             **/build/reports/lint-results-*.html
             **/build/reports/lint-results-*.txt
             **/build/reports/lint-results-*.xml
+            **/build/reports/tests/**
+            **/build/test-results/**
           if-no-files-found: ignore
