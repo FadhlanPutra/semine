@@ -10,14 +10,14 @@ Legenda: `[ ]` belum, `[x]` selesai. Tanda **GATE** berarti titik go/no-go.
 
 - [ ] Tentukan nama aplikasi dan package id (hindari kata "Minecraft"/"Mojang" dan logo mereka)
 - [ ] Cek ketersediaan nama di GitHub, F-Droid, Play Store
-- [ ] Buat repo GitHub (publik atau privat dulu) + `README.md` awal
+- [x] Buat repo GitHub (publik atau privat dulu) + `README.md` awal
 - [ ] Pilih lisensi proyek (mis. GPLv3 atau Apache-2.0; cek kompatibilitas dengan lisensi JRE dan dependensi)
 - [ ] Setup Android Studio, JDK, NDK, CMake
 - [ ] Siapkan 2–3 perangkat uji: minimal satu Android 10–11, satu Android 12+, usahakan beda merek (Xiaomi/Samsung/Oppo)
 - [x] Buat proyek Gradle: Kotlin + Compose + Material 3, `minSdk 29`, `targetSdk` terbaru yang disyaratkan Play
 - [x] Konfigurasi ABI filter `arm64-v8a` saja
 - [x] Buat dua product flavor: `foss` dan `play`
-- [ ] Setup CI GitHub Actions (build debug, lint, unit test)
+- [x] Setup CI GitHub Actions (build debug, lint, unit test)
 - [x] Setup struktur modul: `app`, `core`, `service`, `jvm`, `data` (selesai); `feature-*` dibuat saat fitur pertama dikerjakan di Fase 1
 - [x] Setup lokalisasi sejak awal (`values/` dan `values-in/`), aturan: tidak ada string di kode
 - [ ] Setup logging dan crash report lokal (tanpa layanan berbayar)

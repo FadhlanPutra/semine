@@ -49,3 +49,19 @@ Satu entri per keputusan. Format: tanggal, keputusan, alasan singkat.
 **Keputusan:** pesan commit ditulis dalam bahasa Inggris.
 
 **Alasan:** riwayat git tetap konsisten dan dapat dibaca kontributor luar bila proyek dibuka untuk umum, sementara dokumen dan diskusi proyek tetap berbahasa Indonesia.
+
+---
+
+## 2026-11-03 — CI GitHub Actions
+
+**Keputusan:** CI berjalan di `ubuntu-latest` dengan JDK 21 (distribusi temurin) dan menjalankan `assembleFossDebug`, `assemblePlayDebug`, `lintFossDebug`, serta `:app:testFossDebugUnitTest` (dengan `--no-daemon --stacktrace`). Action yang dipakai dan terbukti jalan pada run hijau pertama: `actions/checkout@v7`, `actions/setup-java@v6`, `gradle/actions/setup-gradle@v6`, `actions/upload-artifact@v7`.
+
+**Alasan:** satu job tunggal cukup untuk ukuran proyek ini dan menangkap kesalahan build kedua flavor, lint, dan unit test sebelum digabung. Versi mayor dipatok agar pembaruan tidak masuk diam-diam, dan action `setup-gradle` dipakai supaya cache Gradle ditangani tanpa skrip cache buatan sendiri.
+
+---
+
+## 2026-11-03 — `gradlew` executable dengan akhir baris LF
+
+**Keputusan:** `gradlew` disimpan di git dengan mode executable (`100755`) dan akhir baris LF, supaya bisa dijalankan langsung (`./gradlew`) di runner Linux.
+
+**Alasan:** runner Linux menolak menjalankan skrip tanpa bit executable (`Permission denied`), dan akhir baris CRLF merusak skrip shell. Menyimpannya benar di git lebih baik daripada menambah langkah `chmod`/konversi di setiap workflow.
